@@ -1,4 +1,4 @@
-# Hardware demo! (takes a few seconds to load the demo GIF)
+# Hardware demo! (takes a few seconds to load the demo)
 
 **Optical-sensor-triggered countdown (Lab 3, Q1)** - pushbuttons set the countdown value; the optical sensor triggers the sequence on a seven-segment display.
 
