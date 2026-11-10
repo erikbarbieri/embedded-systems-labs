@@ -6,7 +6,7 @@
 
 [![Optical-sensor-triggered countdown demo](assets/opto-sensor-preview.gif)](labs/lab-03-opto-sensor/demos/q1.mp4)
 
-*Short, silent preview. [Watch the full Lab 3 Q1 demo](labs/lab-03-opto-sensor/demos/q1.mp4) or please explore the other recordings below.*
+*[Watch the full Lab 3 Q1 demo](labs/lab-03-opto-sensor/demos/q1.mp4) or please explore the other recordings below.*
 
 # Embedded Systems Labs
 
