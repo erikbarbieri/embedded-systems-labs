@@ -1,6 +1,8 @@
-# Hardware demo!
+# Hardware demo! (takes a few seconds to load the demo GIF)
 
 **Optical-sensor-triggered countdown (Lab 3, Q1)** - pushbuttons set the countdown value; the optical sensor triggers the sequence on a seven-segment display.
+
+(demo GIF will load here in a moment!)
 
 [![Optical-sensor-triggered countdown demo](assets/opto-sensor-preview.gif)](labs/lab-03-opto-sensor/demos/q1.mp4)
 
