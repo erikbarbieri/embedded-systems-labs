@@ -1,81 +1,91 @@
 # Embedded Systems Labs
 
-A collection of individual embedded systems lab exercises written in **C++ with the Mbed API**. The labs explore microcontroller input/output through LEDs, a seven-segment display, switches, an optical sensor, and a PWM-controlled buzzer.
+A collection of individual embedded systems lab exercises developed in **C++ using Mbed OS 6.17.0**! These labs explore microcontroller input/output through LEDs, a seven-segment display, switches, an optical sensor, and a PWM-controlled buzzer.
 
-Each question is a standalone program intended to run on the corresponding hardware setup. Short videos demonstrate the physical results.
+Each exercise is an independent program for its associated hardware setup. Source code and short recordings of the working circuits are included below.
+
+## Hardware demo
+
+**Optical-sensor-triggered countdown (Lab 3, Q1)** - pushbuttons set the countdown value; the optical sensor triggers the sequence on a seven-segment display.
+
+[![Optical-sensor-triggered countdown demo](assets/opto-sensor-preview.gif)](labs/lab-03-opto-sensor/demos/q1.mp4)
+
+*Short, silent preview. [Watch the full Lab 3 Q1 demo](labs/lab-03-opto-sensor/demos/q1.mp4) or please explore the other recordings below.*
 
 ## Labs
 
 ### Lab 1 - Blinky LEDs
 
-**Concepts:** Digital output, binary representation, timing, bitwise operations.
+**Concepts:** GPIO output, binary representation, timing, bitwise operations.
 
-- **[Q1 - Binary counter](labs/lab-01-leds/q1.cpp):** Cycle through the values 0-7 in binary using three LEDs.
-- **[Q2 - Binary addition](labs/lab-01-leds/q2.cpp):** Iterate through pairs of values from 0-3, displaying each operand and their sum in binary on four LEDs. A short all-LED blink sequence separates the values.
-- **[Demo](labs/lab-01-leds/demos/demo.mp4):** Both exercises.
+- **[Q1 - Binary counter](labs/lab-01-leds/q1.cpp):** Cycle through values 0–7 in binary using three LEDs. [Watch demo](labs/lab-01-leds/demos/q1.mp4).
+- **[Q2 - Binary addition](labs/lab-01-leds/q2.cpp):** Display operands from 0–3 and their binary sums using four LEDs, with an LED blink pattern separating values. [Watch demo](labs/lab-01-leds/demos/q2.mp4).
 
 ### Lab 2 - Seven-Segment Display
 
-**Concepts:** Segment control, digital inputs, DIP switches, LED timing.
+**Concepts:** Segment control, DIP-switch input, LED timing.
 
-- **[Q1 - Number and character display](labs/lab-02-seven-segment/q1.cpp):** Display a `go` message, cycle through digits 0-9, and then display `end`. DIP-switch settings interrupt the sequence to show a selected value on the display.
-- **[Q2 - Switch-controlled LED blink rates](labs/lab-02-seven-segment/q2.cpp):** Use a six-position DIP switch to select a blink-speed level (0-6). Show the level on the seven-segment display while driving two LEDs at different rates.
-- **Demos:** [Q1](labs/lab-02-seven-segment/demos/q1.mp4) , [Q2](labs/lab-02-seven-segment/demos/q2.mp4)
+- **[Q1 - Number and character display](labs/lab-02-seven-segment/q1.cpp):** Show a start message, cycle through digits, and display an end message; DIP switches select displayed values. [Watch demo](labs/lab-02-seven-segment/demos/q1.mp4).
+- **[Q2 - Switch-controlled blink rates](labs/lab-02-seven-segment/q2.cpp):** Select a blink-rate level using a DIP switch, show the selection on the seven-segment display, and drive LEDs at different rates. [Watch demo](labs/lab-02-seven-segment/demos/q2.mp4).
 
 ### Lab 3 - Optical Sensor
 
-**Concepts:** Digital sensing, pushbutton inputs, state tracking, event counting.
+**Concepts:** Digital sensing, pushbuttons, state tracking, event counting.
 
-- **[Q1 - Sensor-triggered countdown](labs/lab-03-opto-sensor/q1.cpp):** Use three pushbuttons to set a binary countdown value from 0-7, then start the seven-segment countdown when the optical sensor is activated. LEDs indicate the selected bits.
-- **[Q2 - Object/event counter](labs/lab-03-opto-sensor/q2.cpp):** Count optical sensor activations, display the count modulo 10 on the seven-segment display, and flash an LED for feedback.
-- **Demos:** [Q1](labs/lab-03-opto-sensor/demos/q1.mp4) , [Q2](labs/lab-03-opto-sensor/demos/q2.mp4)
+- **[Q1 - Sensor-triggered countdown](labs/lab-03-opto-sensor/q1.cpp):** Use pushbuttons to set a binary countdown value from 0–7, then start the seven-segment countdown when the optical sensor is activated. [Watch demo](labs/lab-03-opto-sensor/demos/q1.mp4).
+- **[Q2 - Event counter](labs/lab-03-opto-sensor/q2.cpp):** Count optical-sensor activations, show the count modulo 10 on a seven-segment display, and flash an LED for feedback. [Watch demo](labs/lab-03-opto-sensor/demos/q2.mp4).
 
 ### Lab 4 - Buzzer
 
 **Concepts:** Pulse-width modulation (PWM), audio frequency, analog input.
 
-- **[Q1 - Sensor-triggered melody](labs/lab-04-buzzer/q1.cpp):** Play a short sequence of notes through a PWM-controlled buzzer when the optical sensor is triggered, with an LED as a visual indicator.
-- **[Q2 - Potentiometer-controlled pitch](labs/lab-04-buzzer/q2.cpp):** Read a potentiometer and continuously map its position to a buzzer frequency of approximately 100-1,000 Hz.
-- **Demos:** [Q1 (with audio)](labs/lab-04-buzzer/demos/q1.mp4) , [Q2 (with audio)](labs/lab-04-buzzer/demos/q2.mp4)
+- **[Q1 - Sensor-triggered melody](labs/lab-04-buzzer/q1.cpp):** Play a series of notes on a PWM-driven buzzer when the optical sensor is triggered, with visual LED feedback. [Watch demo (with sound)](labs/lab-04-buzzer/demos/q1.mp4).
+- **[Q2 - Potentiometer-controlled pitch](labs/lab-04-buzzer/q2.cpp):** Read a potentiometer and map its position to a buzzer frequency of approximately 100–1,000 Hz. [Watch demo (with sound)](labs/lab-04-buzzer/demos/q2.mp4).
 
 ## Repository layout
 
 ```text
 embedded-systems-labs/
 ├── README.md
-├── .gitignore
+├── LICENSE
+├── assets/
+│   └── opto-sensor-preview.gif
 └── labs/
-├── lab-01-leds/
-│ ├── q1.cpp
-│ ├── q2.cpp
-│ └── demos/
-│ └── demo.mp4
-├── lab-02-seven-segment/
-│ ├── q1.cpp
-│ ├── q2.cpp
-│ └── demos/
-│ ├── q1.mp4
-│ └── q2.mp4
-├── lab-03-opto-sensor/
-│ ├── q1.cpp
-│ ├── q2.cpp
-│ └── demos/
-│ ├── q1.mp4
-│ └── q2.mp4
-└── lab-04-buzzer/
-├── q1.cpp
-├── q2.cpp
-└── demos/
-├── q1.mp4
-└── q2.mp4
+    ├── lab-01-leds/
+    │   ├── q1.cpp
+    │   ├── q2.cpp
+    │   └── demos/
+    │       ├── q1.mp4
+    │       └── q2.mp4
+    ├── lab-02-seven-segment/
+    │   ├── q1.cpp
+    │   ├── q2.cpp
+    │   └── demos/
+    │       ├── q1.mp4
+    │       └── q2.mp4
+    ├── lab-03-opto-sensor/
+    │   ├── q1.cpp
+    │   ├── q2.cpp
+    │   └── demos/
+    │       ├── q1.mp4
+    │       └── q2.mp4
+    └── lab-04-buzzer/
+        ├── q1.cpp
+        ├── q2.cpp
+        └── demos/
+            ├── q1.mp4
+            └── q2.mp4
 ```
 
 ## Running the programs
 
-The examples use the Mbed API (`mbed.h`) and depend on the connected board and lab circuit. **Each `q1.cpp` or `q2.cpp` has its own `main()`** and should be built and flashed **individually**. Also it's Mbed OS 6.17.0.
+These examples use the **Mbed API** and depend on the original lab circuits and pin assignments. Each `q1.cpp` or `q2.cpp` contains its own `main()` function, so **compile and flash each exercise separately**, rather than building the entire repository as a single application.
 
-To reproduce a lab, create a compatible Mbed project for your target board, use the chosen question's source as the application entry point, and connect the peripherals to the pins referenced in that file. Hardware pin assignments differ by exercise! :D
+To run an exercise, create a compatible Mbed OS 6.17.0 project for your board, use the selected question's source as the application entry point, and connect peripherals to the pins referenced in that file. The hardware connections differ between exercises.
 
-## Notes
+## Video notes
 
-- Demonstration videos are linked using relative paths under each lab's `demos/` folder.
+- Labs 1–3 are silent; **Lab 4 retains audio** so the buzzer output can be heard, but it's unforunately pretty quiet.
+- The animated GIF above is a brief preview; the corresponding MP4 shows the complete edited demonstration :)
+
+*The descriptions summarize the completed implementations rather than reproducing the original assignment handouts.*
