@@ -1,16 +1,16 @@
-# Embedded Systems Labs
-
-A collection of individual embedded systems lab exercises developed in **C++ using Mbed OS 6.17.0**! These labs explore microcontroller input/output through LEDs, a seven-segment display, switches, an optical sensor, and a PWM-controlled buzzer.
-
-Each exercise is an independent program for its associated hardware setup. Source code and short recordings of the working circuits are included below.
-
-## Hardware demo
+## Hardware demo!
 
 **Optical-sensor-triggered countdown (Lab 3, Q1)** - pushbuttons set the countdown value; the optical sensor triggers the sequence on a seven-segment display.
 
 [![Optical-sensor-triggered countdown demo](assets/opto-sensor-preview.gif)](labs/lab-03-opto-sensor/demos/q1.mp4)
 
 *Short, silent preview. [Watch the full Lab 3 Q1 demo](labs/lab-03-opto-sensor/demos/q1.mp4) or please explore the other recordings below.*
+
+# Embedded Systems Labs
+
+A collection of individual embedded systems lab exercises developed in **C++ using Mbed OS 6.17.0**! These labs explore microcontroller input/output through LEDs, a seven-segment display, switches, an optical sensor, and a PWM-controlled buzzer.
+
+Each exercise is an independent program for its associated hardware setup. Source code and short recordings of the working circuits are included below.
 
 ## Labs
 
