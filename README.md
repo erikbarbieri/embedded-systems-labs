@@ -20,8 +20,8 @@ Each exercise is an independent program for its associated hardware setup. Sourc
 
 **Concepts:** GPIO output, binary representation, timing, bitwise operations.
 
-- **[Q1 - Binary counter](labs/lab-01-leds/q1.cpp):** Cycle through values 0–7 in binary using three LEDs. [Watch demo](labs/lab-01-leds/demos/q1.mp4).
-- **[Q2 - Binary addition](labs/lab-01-leds/q2.cpp):** Display operands from 0–3 and their binary sums using four LEDs, with an LED blink pattern separating values. [Watch demo](labs/lab-01-leds/demos/q2.mp4).
+- **[Q1 - Binary counter](labs/lab-01-leds/q1.cpp):** Cycle through values 0-7 in binary using three LEDs. [Watch demo](labs/lab-01-leds/demos/q1.mp4).
+- **[Q2 - Binary addition](labs/lab-01-leds/q2.cpp):** Display operands from 0-3 and their binary sums using four LEDs, with an LED blink pattern separating values. [Watch demo](labs/lab-01-leds/demos/q2.mp4).
 
 ### Lab 2 - Seven-Segment Display
 
@@ -34,7 +34,7 @@ Each exercise is an independent program for its associated hardware setup. Sourc
 
 **Concepts:** Digital sensing, pushbuttons, state tracking, event counting.
 
-- **[Q1 - Sensor-triggered countdown](labs/lab-03-opto-sensor/q1.cpp):** Use pushbuttons to set a binary countdown value from 0–7, then start the seven-segment countdown when the optical sensor is activated. [Watch demo](labs/lab-03-opto-sensor/demos/q1.mp4).
+- **[Q1 - Sensor-triggered countdown](labs/lab-03-opto-sensor/q1.cpp):** Use pushbuttons to set a binary countdown value from 0-7, then start the seven-segment countdown when the optical sensor is activated. [Watch demo](labs/lab-03-opto-sensor/demos/q1.mp4).
 - **[Q2 - Event counter](labs/lab-03-opto-sensor/q2.cpp):** Count optical-sensor activations, show the count modulo 10 on a seven-segment display, and flash an LED for feedback. [Watch demo](labs/lab-03-opto-sensor/demos/q2.mp4).
 
 ### Lab 4 - Buzzer
@@ -42,7 +42,7 @@ Each exercise is an independent program for its associated hardware setup. Sourc
 **Concepts:** Pulse-width modulation (PWM), audio frequency, analog input.
 
 - **[Q1 - Sensor-triggered melody](labs/lab-04-buzzer/q1.cpp):** Play a series of notes on a PWM-driven buzzer when the optical sensor is triggered, with visual LED feedback. [Watch demo (with sound)](labs/lab-04-buzzer/demos/q1.mp4).
-- **[Q2 - Potentiometer-controlled pitch](labs/lab-04-buzzer/q2.cpp):** Read a potentiometer and map its position to a buzzer frequency of approximately 100–1,000 Hz. [Watch demo (with sound)](labs/lab-04-buzzer/demos/q2.mp4).
+- **[Q2 - Potentiometer-controlled pitch](labs/lab-04-buzzer/q2.cpp):** Read a potentiometer and map its position to a buzzer frequency of approximately 100-1,000 Hz. [Watch demo (with sound)](labs/lab-04-buzzer/demos/q2.mp4).
 
 ## Repository layout
 
@@ -87,7 +87,5 @@ To run an exercise, create a compatible Mbed OS 6.17.0 project for your board, u
 
 ## Video notes
 
-- Labs 1–3 are silent; **Lab 4 retains audio** so the buzzer output can be heard, but it's unforunately pretty quiet.
+- Labs 1-3 are silent; **Lab 4 retains audio** so the buzzer output can be heard, but it's unforunately pretty quiet.
 - The animated GIF above is a brief preview; the corresponding MP4 shows the complete edited demonstration :)
-
-*The descriptions summarize the completed implementations rather than reproducing the original assignment handouts.*
