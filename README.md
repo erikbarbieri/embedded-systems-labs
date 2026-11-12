@@ -49,12 +49,10 @@ https://github.com/user-attachments/assets/fe2db825-118d-44db-b20e-796fb9c60c9c
 https://github.com/user-attachments/assets/0634685a-dd26-479f-bad0-0a58d9dc847c
 
 
-
+<a name="lab-3-q1"></a>
 ### Lab 3 - Optical Sensor
 
 **Concepts:** Digital sensing, pushbuttons, state tracking, event counting.
-
-<a name="lab-3-q1"></a>
 
 - **[Q1 - Sensor-triggered countdown](labs/lab-03-opto-sensor/q1.cpp):** Use pushbuttons to set a binary countdown value from 0-7, then start the seven-segment countdown when the optical sensor is activated.
 
